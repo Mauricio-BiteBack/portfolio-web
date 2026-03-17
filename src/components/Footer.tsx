@@ -52,7 +52,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-8 md:px-12 flex flex-col items-center gap-12">
 
         {/* 1. Contact section — ARRIBA */}
-        <div className="w-full border border-neutral-800 rounded-3xl p-10 md:p-14 flex flex-col md:flex-row items-center justify-between gap-8">
+        <div id="kontakt" className="w-full border border-neutral-800 rounded-3xl p-10 md:p-14 flex flex-col md:flex-row items-center justify-between gap-8">
           {/* Left: Heading */}
           <div className="text-center md:text-left">
             <p className="text-neutral-500 text-sm uppercase tracking-widest mb-2">

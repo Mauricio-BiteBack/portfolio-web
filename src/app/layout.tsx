@@ -12,6 +12,9 @@ export const metadata: Metadata = {
   title: "Mauricio Jaramillo – Web Designer & Builder",
   description:
     "Web Designer & Builder. Ich entwickle moderne Websites und Online-Shops. Schnell, klar und auf den Punkt.",
+  icons: {
+    icon: "/favicon.jpg",
+  },
   openGraph: {
     title: "Mauricio Jaramillo – Web Designer & Builder",
     description: "Web Designer & Builder. Ich entwickle moderne Websites.",

@@ -61,12 +61,12 @@ export default function Hero() {
           />
         </Link>
 
-        <Link
-          href="mailto:mauriciojaramillo146@gmail.com"
+        <a
+          href="#kontakt"
           className="bg-blue-600 hover:bg-blue-500 text-white font-medium px-6 py-2.5 rounded-full text-sm transition-colors duration-200"
         >
           Kontaktiere Mich
-        </Link>
+        </a>
       </nav>
 
       {/* Photo */}
