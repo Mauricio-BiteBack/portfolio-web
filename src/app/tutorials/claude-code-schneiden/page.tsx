@@ -1,6 +1,5 @@
 "use client";
 
-import { Metadata } from "next";
 
 const tutorialStyles = `
   @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap');
@@ -212,7 +211,7 @@ export default function TutorialPage() {
           <p className="tut-section-label">01 — Was ist das</p>
           <h2>Dein KI-Videostudio</h2>
           <div className="tut-card" style={{ marginBottom: 16 }}>
-            <p>Stell dir vor, du sagst deinem Rechner einfach: <em>„Mach mir ein 30-Sekunden-Video für mein Produkt"</em> — und er macht es. Genau das ist Editor Pro Max. Ein Open-Source-Tool, das Claude Code in ein vollständiges Videostudio verwandelt.</p>
+            <p>Stell dir vor, du sagst deinem Rechner einfach: <em>„Mach mir ein 30-Sekunden-Video für mein Produkt&quot;</em> — und er macht es. Genau das ist Editor Pro Max. Ein Open-Source-Tool, das Claude Code in ein vollständiges Videostudio verwandelt.</p>
           </div>
           <div className="tut-card-grid" style={{ gap: 12 }}>
             <div className="tut-card"><h3>Beschreiben</h3><p style={{ marginTop: 5 }}>Du sagst Claude, was du brauchst — auf Deutsch, wie mit einem echten Editor.</p></div>
