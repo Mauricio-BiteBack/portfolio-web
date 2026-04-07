@@ -206,7 +206,7 @@ export default function WhatsAppAgentKitPage() {
                 <ul className="list-disc pl-5 space-y-1 text-sm text-[#5B5851]">
                   <li>Den gesamten Code schreiben</li>
                   <li>Die WhatsApp-Verbindung einrichten</li>
-                  <li>Ein KI-„Gehirn" erstellen, das dein Unternehmen kennt</li>
+                  <li>Ein KI-&bdquo;Gehirn&ldquo; erstellen, das dein Unternehmen kennt</li>
                   <li>Alles bereit machen, damit deine Kunden schreiben können</li>
                 </ul>
               </div>
@@ -214,17 +214,17 @@ export default function WhatsAppAgentKitPage() {
                 <div className="rounded-xl border border-[#E6E6E4] bg-[#FCFCFB] p-4 space-y-1">
                   <p className="text-2xl">🍽️</p>
                   <p className="font-semibold text-[#37352F]">Restaurant</p>
-                  <p className="text-[#5B5851]">„Das Tagesgericht ist..."</p>
+                  <p className="text-[#5B5851]">&bdquo;Das Tagesgericht ist...&ldquo;</p>
                 </div>
                 <div className="rounded-xl border border-[#E6E6E4] bg-[#FCFCFB] p-4 space-y-1">
                   <p className="text-2xl">💇</p>
                   <p className="font-semibold text-[#37352F]">Praxis / Salon</p>
-                  <p className="text-[#5B5851]">„Dein Termin ist Dienstag um 15 Uhr"</p>
+                  <p className="text-[#5B5851]">&bdquo;Dein Termin ist Dienstag um 15 Uhr&ldquo;</p>
                 </div>
                 <div className="rounded-xl border border-[#E6E6E4] bg-[#FCFCFB] p-4 space-y-1">
                   <p className="text-2xl">🏠</p>
                   <p className="font-semibold text-[#37352F]">Immobilien</p>
-                  <p className="text-[#5B5851]">„Wir haben 3 Wohnungen in deiner Preisspanne..."</p>
+                  <p className="text-[#5B5851]">&bdquo;Wir haben 3 Wohnungen in deiner Preisspanne...&ldquo;</p>
                 </div>
               </div>
             </div>
@@ -279,7 +279,7 @@ export default function WhatsAppAgentKitPage() {
                 <div className="rounded-xl border border-[#E6E6E4] bg-[#FCFCFB] p-4 space-y-2">
                   <p className="text-sm font-semibold text-[#37352F]">3. Anthropic API-Key</p>
                   <p className="text-sm text-[#5B5851]">
-                    Der „Schlüssel", damit dein Agent mit Claude AI denken kann. Erhältlich auf{" "}
+                    Der &bdquo;Schlüssel&ldquo;, damit dein Agent mit Claude AI denken kann. Erhältlich auf{" "}
                     <a
                       href="https://platform.claude.com/settings/keys"
                       target="_blank"
@@ -597,7 +597,7 @@ export default function WhatsAppAgentKitPage() {
                 <div className="rounded-xl border border-[#E6E6E4] bg-[#FCFCFB] p-4 space-y-1">
                   <p className="text-sm font-semibold text-[#37352F]">Was passiert, wenn der Agent etwas nicht weiß?</p>
                   <p className="text-sm text-[#5B5851]">
-                    Er antwortet: „Dazu habe ich keine Information — ich verbinde dich mit jemandem aus unserem Team."
+                    Er antwortet: &bdquo;Dazu habe ich keine Information — ich verbinde dich mit jemandem aus unserem Team.&ldquo;
                     Er erfindet niemals Daten.
                   </p>
                 </div>
@@ -610,7 +610,7 @@ export default function WhatsAppAgentKitPage() {
                 <div className="rounded-xl border border-[#E6E6E4] bg-[#FCFCFB] p-4 space-y-1">
                   <p className="text-sm font-semibold text-[#37352F]">Kann ich den Anbieter später wechseln?</p>
                   <p className="text-sm text-[#5B5851]">
-                    Ja. Sag Claude Code: „Ich möchte von Whapi zu Meta Cloud API wechseln."
+                    Ja. Sag Claude Code: &bdquo;Ich möchte von Whapi zu Meta Cloud API wechseln.&ldquo;
                   </p>
                 </div>
               </div>
