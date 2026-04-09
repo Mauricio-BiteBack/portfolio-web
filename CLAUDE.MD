@@ -340,3 +340,15 @@ La siguiente es la estructura HTML completa de un tutorial ya publicado (`/tutor
 | Slug                | URL                                        | Estado     |
 |---------------------|--------------------------------------------|------------|
 | token-efficient     | /tutorials/token-efficient                 | ✅ Publicado |
+
+# CLAUDE.md — Token Efficient Rules
+
+## Work Rules
+1. Think before acting — read the relevant files first, then write code.
+2. Be concise in output, thorough in reasoning.
+3. Edit existing files instead of rewriting them completely.
+4. Don't re-read files you've already read unless they've changed.
+5. Test code before saying you're done.
+6. No greetings, no filler, no "Of course! Great question!".
+7. Simple and direct solutions.
+8. User instructions always take priority over this file.
