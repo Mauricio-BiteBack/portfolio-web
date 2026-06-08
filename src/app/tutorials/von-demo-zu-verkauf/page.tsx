@@ -332,7 +332,7 @@ export default function VonDemoZuVerkaufPage() {
                 </h2>
                 <div className="space-y-4 text-[15px] leading-7 text-[#4D4A44] sm:text-[16px]">
                   <p>
-                    <em>Vibe-Coding</em> – also mit KI programmieren – hat es so einfach gemacht, dass jeder an einem Nachmittag etwas bauen kann, das großartig aussieht. Aber wenn du der KI sagst „bau mir eine App, die mich reich macht", verkauft das noch nichts. Was außen schön wirkt, ist innen fast immer noch ein Demo: Die erste Person, die zahlt, wird die Schwachstellen finden.
+                    <em>Vibe-Coding</em> – also mit KI programmieren – hat es so einfach gemacht, dass jeder an einem Nachmittag etwas bauen kann, das großartig aussieht. Aber wenn du der KI sagst &quot;bau mir eine App, die mich reich macht&quot;, verkauft das noch nichts. Was außen schön wirkt, ist innen fast immer noch ein Demo: Die erste Person, die zahlt, wird die Schwachstellen finden.
                   </p>
                   <p>
                     Was wirklich verkauft, ist eine App, die <strong className="font-semibold text-[#37352F]">strukturiert und durchdacht</strong> ist –{" "}
@@ -377,7 +377,7 @@ export default function VonDemoZuVerkaufPage() {
                         <h3 className="text-lg font-semibold text-[#2f2d27]">Komprimiertes Frontend</h3>
                       </div>
                       <p className="text-sm leading-6 text-[#5B5851]">
-                        <strong className="text-[#37352F]">Was das ist:</strong> Deine App wird gepackt und minifiziert veröffentlicht, ohne die „Source Maps", die deinen originalen Code rekonstruieren.
+                        <strong className="text-[#37352F]">Was das ist:</strong> Deine App wird gepackt und minifiziert veröffentlicht, ohne die &quot;Source Maps&quot;, die deinen originalen Code rekonstruieren.
                       </p>
                       <p className="text-sm leading-6 text-[#5B5851]">
                         <strong className="text-[#37352F]">Warum es wichtig ist:</strong> Ohne das öffnet jeder die Browser-Entwicklertools und sieht deinen Code – und schlimmer noch: deine privaten API-Keys.
