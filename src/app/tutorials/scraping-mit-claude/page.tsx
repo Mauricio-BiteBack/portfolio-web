@@ -501,7 +501,7 @@ export default function ScrapingMitClaudePage() {
                         <div className="mb-3 flex items-start justify-between gap-4">
                           <div>
                             <h3 className="text-lg font-semibold text-[#2f2d27]">Ganzer Katalog, nicht nur die erste Seite</h3>
-                            <p className="mt-1 text-sm text-[#5f5b53]">Wenn die Seite Paginierung hat (?page=2, ?page=3 oder ein „Weiter"-Button). Claude erkennt das Muster, iteriert per WebFetch durch alle Seiten, bündelt Ergebnisse und dedupliziert.</p>
+                            <p className="mt-1 text-sm text-[#5f5b53]">Wenn die Seite Paginierung hat (?page=2, ?page=3 oder ein „Weiter&quot;-Button). Claude erkennt das Muster, iteriert per WebFetch durch alle Seiten, bündelt Ergebnisse und dedupliziert.</p>
                           </div>
                           <CopyButton text={PROMPT_NATIV_02} />
                         </div>
@@ -707,7 +707,7 @@ export default function ScrapingMitClaudePage() {
                       <div className="rounded-xl border border-[#E6E6E4] bg-[#FCFCFB] p-5">
                         <div className="mb-3 flex items-start justify-between gap-4">
                           <div>
-                            <h3 className="text-lg font-semibold text-[#2f2d27]">SearchGraph für breite „finde und hole"-Themen</h3>
+                            <h3 className="text-lg font-semibold text-[#2f2d27]">SearchGraph für breite „finde und hole&quot;-Themen</h3>
                             <p className="mt-1 text-sm text-[#5f5b53]">Wenn du keine URLs hast, nur das Thema. SearchGraph sucht bei DuckDuckGo, scrapt die Top-N-Ergebnisse und konsolidiert. Funktioniert wie eine automatische Mini-Recherche.</p>
                           </div>
                           <CopyButton text={PROMPT_SGAI_04} />
