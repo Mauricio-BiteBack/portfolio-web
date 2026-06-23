@@ -131,12 +131,12 @@ export default function TutorialsPage() {
                 className="group flex items-start gap-3 border-b border-[#E6E6E4] px-4 py-4 transition-colors last:border-b-0 hover:bg-[#FAFAF8] sm:gap-4 sm:px-5"
               >
                 <span className="mt-0.5 flex h-9 w-9 shrink-0 items-center justify-center rounded-md border border-[#E6E6E4] bg-white text-[#5d5a53]">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"/><path d="M14 2v5a1 1 0 0 0 1 1h5"/><path d="M10 9H8"/><path d="M16 13H8"/><path d="M16 17H8"/></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-4 w-4" aria-hidden="true"><path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"/><path d="M14 2v5a1 1 0 0 0 1 1h5"/><path d="M10 9H8"/><path d="M16 13H8"/><path d="M16 17H8"/></svg>
                 </span>
 
                 <div className="min-w-0 flex-1">
-                  <div className="flex flex-wrap items-start gap-2">
-                    <h3 className="text-[15px] font-semibold leading-snug text-[#2a2822] group-hover:text-[#1E1D1A]">
+                  <div className="flex items-start gap-2">
+                    <h3 className="truncate text-[15px] font-semibold leading-snug text-[#2a2822] group-hover:text-[#1E1D1A]">
                       {tutorial.title}
                     </h3>
                     <span className="mt-0.5 hidden shrink-0 rounded-full border border-[#E3E1DA] bg-white px-1.5 py-0.5 text-[10px] font-medium uppercase tracking-wider text-[#8B8B85] sm:inline-block">
@@ -152,7 +152,7 @@ export default function TutorialsPage() {
                       {tutorial.difficulty}
                     </span>
                   </div>
-                  <p className="mt-1 line-clamp-2 text-[13px] leading-5 text-[#5f5b53]">
+                  <p className="mt-1 line-clamp-1 text-[13px] leading-5 text-[#5f5b53]">
                     {tutorial.description}
                   </p>
                   <div className="mt-2 flex flex-wrap gap-1.5">
