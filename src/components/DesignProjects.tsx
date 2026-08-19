@@ -9,16 +9,18 @@ interface DesignProject {
   title: string;
   image: string;
   bg: string;
-  zoom?: boolean; // first two images should be zoomed in
+  zoom?: boolean;
+  fullPreview?: boolean; // show full image in modal without cropping
 }
 
 const projects: DesignProject[] = [
   {
     id: "blumengarten-konzert",
-    title: "Blumengarten Konzert — Köln",
+    title: "Blumengarten Konzert Köln",
     image: "/images/projects/design/blumengarten-konzert.jpg",
     bg: "#0d0d0d",
     zoom: true,
+    fullPreview: true,
   },
   {
     id: "flowmate",
@@ -29,10 +31,11 @@ const projects: DesignProject[] = [
   },
   {
     id: "brent-faiyaz",
-    title: "Brent Faiyaz — Poster",
+    title: "Brent Faiyaz Poster",
     image: "/images/projects/design/brent-faiyaz-poster.jpg",
     bg: "#111111",
     zoom: false,
+    fullPreview: true,
   },
 ];
 
@@ -125,15 +128,28 @@ function DesignModal({
           </svg>
         </button>
 
-        <div className="relative w-full" style={{ aspectRatio: "1/1" }}>
-          <Image
-            src={project.image}
-            alt={project.title}
-            fill
-            className="object-cover"
-            sizes="(max-width: 768px) 100vw, 512px"
-          />
-        </div>
+        {project.fullPreview ? (
+          <div className="relative w-full flex items-center justify-center p-2">
+            <Image
+              src={project.image}
+              alt={project.title}
+              width={800}
+              height={1000}
+              className="w-full h-auto rounded-xl object-contain"
+              sizes="(max-width: 768px) 100vw, 512px"
+            />
+          </div>
+        ) : (
+          <div className="relative w-full" style={{ aspectRatio: "1/1" }}>
+            <Image
+              src={project.image}
+              alt={project.title}
+              fill
+              className="object-cover"
+              sizes="(max-width: 768px) 100vw, 512px"
+            />
+          </div>
+        )}
         <div className="p-5 bg-black/20">
           <h3
             className="font-bold text-xl"
