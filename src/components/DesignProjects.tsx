@@ -14,10 +14,10 @@ interface DesignProject {
 
 const projects: DesignProject[] = [
   {
-    id: "bienenglueck",
-    title: "Bienenglück",
-    image: "/images/projects/design/bienenglueck.png",
-    bg: "#f5f0e8",
+    id: "blumengarten-konzert",
+    title: "Blumengarten Konzert — Köln",
+    image: "/images/projects/design/blumengarten-konzert.jpg",
+    bg: "#0d0d0d",
     zoom: true,
   },
   {
@@ -28,10 +28,10 @@ const projects: DesignProject[] = [
     zoom: true,
   },
   {
-    id: "bundeswehr",
-    title: "Bundeswehr",
-    image: "/images/projects/design/bundeswehr.jpg",
-    bg: "#1a1a1a",
+    id: "brent-faiyaz",
+    title: "Brent Faiyaz — Poster",
+    image: "/images/projects/design/brent-faiyaz-poster.jpg",
+    bg: "#111111",
     zoom: false,
   },
 ];
@@ -138,7 +138,7 @@ function DesignModal({
           <h3
             className="font-bold text-xl"
             style={{
-              color: project.bg === "#1a1a1a" ? "#fff" : "#111",
+              color: ["#1a1a1a", "#0d0d0d", "#111111"].includes(project.bg) ? "#fff" : "#111",
             }}
           >
             {project.title}
