@@ -1,13 +1,6 @@
-"use client";
 import React, { useState } from 'react';
 
 const EigenerKiAssistent = () => {
-  const [activeSection, setActiveSection] = useState<string | null>(null);
-
-  const toggleSection = (id: string) => {
-    setActiveSection(activeSection === id ? null : id);
-  };
-
   const stops = [
     { num: '01', title: 'So nutzt du diese Seite', desc: 'Was du baust und welcher der drei Wege deiner ist' },
     { num: '02', title: 'Das Skelett', desc: 'Die fünf Schichten eines persönlichen Agenten' },
