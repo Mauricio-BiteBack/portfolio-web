@@ -9,17 +9,16 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "#000000",
-        foreground: "#ffffff",
-        blue: {
-          DEFAULT: "#2563EB",
-          600: "#2563EB",
-          500: "#3B82F6",
+        kw: {
+          dark: "#1D1616",
+          wine: "#6E2C34",
+          gold: "#D9A441",
+          "gold-light": "#EFD9A6",
+          cream: "#FAF6EE",
         },
       },
       fontFamily: {
-        sans: ["Inter", "-apple-system", "sans-serif"],
-        script: ["Dancing Script", "cursive"],
+        jakarta: ["var(--font-jakarta)", "sans-serif"],
       },
       keyframes: {
         fadeInUp: {

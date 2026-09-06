@@ -2,12 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Inter:wght@300;400;500;600;700;800;900&display=swap');
-
 :root {
-  --background: #000000;
-  --foreground: #ffffff;
-  --blue: #2563EB;
+  --kw-dark: #1D1616;
+  --kw-wine: #6E2C34;
+  --kw-gold: #D9A441;
+  --kw-gold-light: #EFD9A6;
+  --kw-cream: #FAF6EE;
 }
 
 * {
@@ -19,18 +19,159 @@ html {
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  color: var(--kw-dark);
+  background: var(--kw-dark);
+  font-family: var(--font-jakarta), -apple-system, BlinkMacSystemFont, sans-serif;
   overflow-x: hidden;
 }
 
-.font-script {
-  font-family: 'Dancing Script', cursive;
+/* Liquid glass SVG filter */
+.btn-liquid {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Scroll reveal */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-delay-1 { transition-delay: 0.1s; }
+.reveal-delay-2 { transition-delay: 0.2s; }
+.reveal-delay-3 { transition-delay: 0.3s; }
+.reveal-delay-4 { transition-delay: 0.4s; }
+
+/* Float animation for badges */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+}
+
+@keyframes float-delayed {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-6px); }
+}
+
+.animate-float {
+  animation: float 3.5s ease-in-out infinite;
+}
+
+.animate-float-delayed {
+  animation: float-delayed 4s ease-in-out infinite 0.8s;
+}
+
+/* Pulse dot */
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+
+.pulse-dot {
+  animation: pulse-dot 2s ease-in-out infinite;
+}
+
+/* Preloader */
+@keyframes preloader-fade-in {
+  from { opacity: 0; transform: scale(0.92); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.preloader-icon {
+  animation: preloader-fade-in 0.9s cubic-bezier(0.215, 0.61, 0.355, 1) forwards;
+}
+
+/* Glassmorphism card */
+.glass-card {
+  background: linear-gradient(135deg, rgba(250, 246, 238, 0.08) 0%, rgba(250, 246, 238, 0.03) 100%);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(250, 246, 238, 0.12);
+}
+
+/* Navbar scroll effect */
+.navbar {
+  transition: background 0.3s ease, border-color 0.3s ease, backdrop-filter 0.3s ease;
+}
+
+.navbar.scrolled {
+  background: rgba(29, 22, 22, 0.92);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(250, 246, 238, 0.08);
+}
+
+/* FAQ accordion */
+.faq-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease;
+}
+
+.faq-content.open {
+  max-height: 600px;
+}
+
+/* Drag cards */
+.case-card {
+  cursor: grab;
+  user-select: none;
+}
+
+.case-card:active {
+  cursor: grabbing;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+  .font-jakarta {
+    font-family: var(--font-jakarta), sans-serif;
+  }
+}
+
+/* Concentric rings hero background */
+.hero-rings {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+
+.hero-rings::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 140%;
+  padding-bottom: 140%;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle at center,
+    #FAF6EE 0%,
+    #EFD9A6 8%,
+    #D9A441 18%,
+    #B87333 28%,
+    #8B3A40 40%,
+    #6E2C34 55%,
+    #4A1B1F 72%,
+    #1D1616 100%
+  );
+}
+
+/* Method connector line */
+.method-connector {
+  position: absolute;
+  left: 19px;
+  top: 40px;
+  bottom: -40px;
+  width: 2px;
+  background: linear-gradient(to bottom, #D9A441, rgba(217, 164, 65, 0.1));
 }
