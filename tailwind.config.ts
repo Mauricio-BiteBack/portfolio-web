@@ -19,6 +19,8 @@ const config: Config = {
       },
       fontFamily: {
         jakarta: ["var(--font-jakarta)", "sans-serif"],
+        bebas: ["var(--font-bebas)", "sans-serif"],
+        helv: ['"Helvetica Neue"', "Helvetica", "Arial", "sans-serif"],
       },
       keyframes: {
         fadeInUp: {

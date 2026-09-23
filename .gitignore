@@ -31,6 +31,9 @@ yarn-error.log*
 # vercel
 .vercel
 
+# quiz leads (PII, do not commit)
+/data
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts

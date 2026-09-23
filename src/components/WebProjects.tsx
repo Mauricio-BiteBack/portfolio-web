@@ -38,7 +38,7 @@ const initialProjects: Project[] = [
     title: "AlbertoPla",
     description:
       "Website für einen Fotografen mit Fokus auf soziale Reportagen weltweit. Präsentiert Projekte, Geschichten und internationale Arbeiten.",
-    image: "/images/projects/websites/albertopla.png",
+    image: "/images/projects/websites/albertopla.webp",
     url: "https://albertopla.com",
   },
   {
@@ -47,7 +47,7 @@ const initialProjects: Project[] = [
     title: "Germanya Naturkosmetik",
     description:
       "Shopify-Onlineshop für eine Haarpflegemarke mit Fokus auf Lockenpflege. Optimiert für SEO, automatisierte Bestellungen und E-Mail-Marketing.",
-    image: "/images/projects/websites/germanya.png",
+    image: "/images/projects/websites/germanya.webp",
     url: "https://www.germany-a.com",
   },
 ];
@@ -59,7 +59,7 @@ const moreProjects: Project[] = [
     title: "Amanirent",
     description:
       "WordPress-Website für ein Unternehmen, das Ferienwohnungen in Valencia verwaltet. Klare Präsentation der Services und der angebotenen Immobilien.",
-    image: "/images/projects/websites/amanirent.png",
+    image: "/images/projects/websites/amanirent.webp",
     url: "https://amanirent.es",
   },
   {
