@@ -1,0 +1,67 @@
+.container {
+  position: absolute;
+  right: 8%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 420px;
+  height: 420px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Glow base FIJO, siempre visible, nunca parpadea */
+.baseGlow {
+  position: absolute;
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #6e2c34 0%, rgba(110,44,52,0.4) 45%, transparent 70%);
+  filter: blur(35px);
+  opacity: 0.9;
+}
+
+/* Ondas que se expanden ENCIMA del glow base, sin que este desaparezca */
+.wave {
+  position: absolute;
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  border: 2px solid rgba(110, 44, 52, 0.5);
+  filter: blur(8px);
+  animation: rippleOut 3.5s cubic-bezier(0.2, 0.6, 0.4, 1) infinite;
+}
+
+.logoWrapper {
+  position: relative;
+  z-index: 10;
+  width: 200px;
+}
+
+.logo {
+  width: 100%;
+  height: auto;
+  filter: brightness(0);
+}
+
+@keyframes rippleOut {
+  0% {
+    transform: scale(0.75);
+    opacity: 0.6;
+  }
+  100% {
+    transform: scale(1.9);
+    opacity: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    right: 50%;
+    transform: translate(50%, -50%);
+    opacity: 0.25;
+    z-index: -1;
+  }
+}
